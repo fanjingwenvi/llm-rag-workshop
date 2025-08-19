@@ -212,3 +212,110 @@ app/postgres_data/
 .streamlit/
 *.log
 *.pid
+
+# Security-sensitive files and directories
+# API Keys and Secrets
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*_rsa
+*_rsa.pub
+*_dsa
+*_dsa.pub
+*_ecdsa
+*_ecdsa.pub
+*_ed25519
+*_ed25519.pub
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
+
+# Environment and configuration files
+.env.*
+.envrc.*
+config.json
+config.yaml
+config.yml
+secrets.json
+secrets.yaml
+secrets.yml
+credentials.json
+credentials.yaml
+credentials.yml
+*.credentials
+*.secrets
+
+# Cloud provider credentials
+google_credentials.json
+gcp_credentials.json
+aws_credentials
+.aws/
+.gcp/
+.azure/
+service-account*.json
+
+# Database dumps and backups
+*.sql
+*.dump
+*.backup
+*.bak
+*.db
+*.sqlite
+*.sqlite3
+
+# Docker secrets and sensitive volumes
+docker-compose.override.yml
+docker-compose.prod.yml
+docker-compose.local.yml
+.docker/
+
+# Jupyter notebook checkpoints with potential sensitive output
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Temporary files that might contain sensitive data
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# IDE and editor files that might contain sensitive data
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Application-specific sensitive data
+# Vector database storage (already covered but being explicit)
+qdrant_storage/
+postgres_data/
+grafana_data/
+
+# Logs that might contain sensitive information
+*.log.*
+logs/
+log/
+
+# SSL/TLS certificates
+ssl/
+certs/
+certificates/
+
+# Backup files
+*.orig
+*.bak
+*.backup
+
+# OS generated files
+.DS_Store?
+ehthumbs.db
+Icon?
